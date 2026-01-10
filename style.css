@@ -42,7 +42,9 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%; /* LLargura pode ser em pixes ou % */
+  max-width: 588px;
+
  /* margin-right: auto;
   margin-left: auto;*/
   margin: 56px auto 0px;
