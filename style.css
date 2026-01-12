@@ -93,13 +93,20 @@ body * {
   left: 0%;
   z-index: 1; /* qual o andar/camada do elemento */
   transform: translateY(-50%); /* transformação de elemento */
+
+  animation: slide-light 0.2s; /* animação ao carregar a página */
 }
 
 .light #switch button {
-  right: 0%;
-  left: initial; /* Volta para a maneira inicial */
+  /* right: 0%;
+  left: initial;*/ /* Volta para a maneira inicial */
+  animation: slide-dark 0.2s forwards; /* forwards mantém o estado final da animação */
 }
 
+#switch button:hover {
+  cursor: pointer; /* muda o cursor ao passar por cima do botão */
+  outline: 8px solid var(--highlight-color); /* contorno ao redor do botão */
+}
 #switch span {
   display: block; /*block - um abaixo do outro / inline um ao aldo do outro */
   width: 64px;
@@ -186,5 +193,28 @@ footer {
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/*animação do botão switch */
+#switch button {
+  transition: left 0.3s, right 0.3s;
+}
+
+@keyframes slide-dark {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-light {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0%;
   }
 }
