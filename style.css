@@ -197,9 +197,6 @@ footer {
 }
 
 /*animação do botão switch */
-#switch button {
-  transition: left 0.3s, right 0.3s;
-}
 
 @keyframes slide-dark {
   from {

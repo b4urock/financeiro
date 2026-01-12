@@ -1,80 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="light">
-<head>
+<html lang="pt-br" class="">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevLinks</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-     <div id="container">
-        <div id="profile">
-        <img 
-        src="./assets/avatar-dark.png" 
-        alt="Foto de Pablo Pereira sorrindo, sem barba e
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img
+          src="./assets/avatar-dark.png"
+          alt="Foto de Pablo Pereira sorrindo, sem barba e
         em fundo neutro."
         />
         <p>@b4urock</p>
-    </div>
+      </div>
 
-    <div id="switch" onclick="toggleMode()">
+      <div id="switch" onclick="toggleMode()">
         <button></button>
         <span></span>
+      </div>
+
+      <ul>
+        <li>
+          <a href="#">Inscrever-se no NLW</a>
+        </li>
+
+        <li>
+          <a href="#">Baixar meu e-book</a>
+        </li>
+
+        <li>
+          <a href="https://github.com/b4urock" target="_blank"
+            >Ver meu Portifólio</a
+          >
+        </li>
+
+        <li>
+          <a href="https://b4urock.duckdns.org" target="_blank"
+            >Conheça o Explorer</a
+          >
+        </li>
+      </ul>
+      <div id="social-links">
+        <a href="https://github.com/b4urock" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+
+        <a href="https://instagram.com/b4urock" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+
+        <a href="https://youtube.com/b4urock" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/pablo-pereira-3107/"
+          target="_blank"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+      <footer>
+        Feito por
+        <a href="https://github.com/b4urock" target="_blank">Pablo Pereira</a>
+      </footer>
     </div>
-
-    <ul>
-        <li>
-            <a href="#">Inscrever-se no NLW</a>
-        </li>
-
-        <li>
-            <a href="#">Baixar meu e-book</a>
-        </li>
-        
-        <li>
-            <a href="https://github.com/b4urock"
-              target="_blank"            
-            >Ver meu Portifólio</a>
-        </li>
-        
-        <li>
-            <a href="https://b4urock.duckdns.org"
-              target="_blank"
-            >Conheça o Explorer</a>
-        </li>        
-    </ul>
-    <div id="social-links">
-      <a href="https://github.com/b4urock" target="_blank">
-        <ion-icon name="logo-github"></ion-icon>
-      </a>
-
-      <a href="https://instagram.com/b4urock" target="_blank">
-        <ion-icon name="logo-instagram"></ion-icon>
-      </a>
-
-      <a href="https://youtube.com/b4urock" target="_blank">   
-        <ion-icon name="logo-youtube"></ion-icon>
-      </a>
-
-      <a href="https://www.linkedin.com/in/pablo-pereira-3107/" target="_blank">    
-        <ion-icon name="logo-linkedin"></ion-icon>
-      </a>      
-    </div>
-    <footer>
-        Feito por <a href="https://github.com/b4urock"
-              target="_blank"            
-            >Pablo Pereira</a>
-    </footer>
-    </div> 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
